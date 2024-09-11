@@ -24,8 +24,80 @@ footer {
 	margin: auto;
 }
 
+.overflow-container {
+	overflow: hidden;
+}
+
+.nav-ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+  
+.nav-li {
+	float: left;
+}
+  
+.active {
+	background-color: #6b6b6b;
+}
+
+.nav-a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: larger;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+.nav-a:hover {
+	background-color: #111;
+}
+
+.ws-black {
+	background-color: #282A35 !important;
+	color: white !important;
+}
+
+hr {
+	width: 30%;
+	border: solid black;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.sliding-background {
+	background: url(backgrounds/repeating.png) repeat-x;
+	height: 5076px;
+	width: 5076px;
+	animation: slide 60s linear infinite;
+}
+  
+@keyframes slide{
+	0% {
+	  transform: translate3d(0, 0, 0);
+	}
+	100% {
+	  transform: translate3d(-1692px, 0, 0);
+	}
+}
+
 .main {
-	background-image: linear-gradient(rgba(49, 39, 39, 0.95), rgb(0, 0, 0)), url(backgrounds/looping.jpg);
+	background-image: linear-gradient(rgba(204, 188, 136, 0.95), rgb(201, 166, 72)) url(backgrounds/repeating.png);
 }
 
 .img-responsive {
@@ -42,19 +114,27 @@ footer {
 	color: rgb(238, 79, 79);
 }
 .alt-link {
-	color: rgb(202, 220, 228)
+	color: rgb(207, 241, 255)
+}
+
+.indent {
+	text-indent: 15px;
+}
+
+.left-align {
+	text-align: left;
 }
 
 .styled {
 	display: inline-block;
-	color: #000000;
+	color: #ffffff;
 	font-family: Georgia, serif;
 	line-height: 1.6;
 	padding: 20px;
-	background-color: #a7a7a7bd;
-	border-right : 5px solid #000000;
-	border-left : 5px solid #000000;
-	border-radius: 10%;
+	background-color: rgba(0, 0, 0, 0.548);
+	border-right : 2px solid #00000057;
+	border-left : 2px solid #000000;
+	border-radius: 2%;
 	border-top : 1px solid #000000;
 	border-bottom : 1px solid #000000;
 }
@@ -71,15 +151,13 @@ footer {
 }
 
 .title-text {
-	font-size: 45px;
+	font-size: 55px;
 	display: inline-block;
-	color: #ffffff;
+	color: #000000;
 	font-family: Georgia, serif;
-	line-height: 1.6;
-	padding: 10px;
+	line-height: .5;
 	padding-left: 30px;
 	padding-right: 30px;
-	background-color: #00000071;
 }
 
 div {text-align: center;}
