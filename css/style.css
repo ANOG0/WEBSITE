@@ -86,6 +86,18 @@ hr {
 	width: 5076px;
 	animation: slide 60s linear infinite;
 }
+
+.ws-table-all {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	display: table;
+	border: 1px solid #ccc;
+}
+
+.white {
+	background-color: #ffffff;
+}
   
 @keyframes slide{
 	0% {
@@ -102,7 +114,7 @@ hr {
 
 .img-responsive {
 	width: 525px  ;
-	height: 300 ;
+	height: 300px ;
 	border-radius: 5%;
 	border-right : 3px solid #000000;
 	border-left : 3px solid #000000;
